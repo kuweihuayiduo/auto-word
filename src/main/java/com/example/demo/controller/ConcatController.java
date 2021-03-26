@@ -1,4 +1,3 @@
-/*
 package com.example.demo.controller;
 
 import com.example.demo.service.ConcatService;
@@ -18,13 +17,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-*/
 /**
  * @ClassName:aaa
  * @Author:sq
  * @Description:
  * @Date:2021/3/2 19:18
- *//*
+ */
 
 @Controller
 @Repository
@@ -40,7 +38,6 @@ public class ConcatController {
 
 
 
-    */
 /**
     public static void main(String[] args) throws Exception {
 
@@ -72,22 +69,20 @@ public class ConcatController {
     */
 /**
      * @Description: 替换段落和表格和图表等内容
-     *//*
+     */
 
     public static void replaceAll(XWPFDocument doc) throws Exception {
         doCharts(doc);  // 处理图表数据，柱状图
     }
-    */
 /**
      * 处理图表
      *
      * @param doc
      * @throws FileNotFoundException
-     *//*
+     */
 
     public static void doCharts(XWPFDocument doc) throws FileNotFoundException {
-        */
-/**----------------------------处理图表------------------------------------**//*
+/**----------------------------处理图表------------------------------------**/
 
         // 获取word模板中的所有图表元素，用map存放
         // 为什么不用list保存：查看doc.getRelations()的源码可知，源码中使用了hashMap读取文档图表元素，
@@ -174,4 +169,3 @@ public class ConcatController {
     }
 
 }
-*/
